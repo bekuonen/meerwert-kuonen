@@ -5,6 +5,45 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap');
 
+/* --- CSS-Variablen --- */
+:root {
+  /* Farben */
+  --color-bg:       #F5F0EB;
+  --color-text:     #2B2D3F;
+  --color-accent:   #8B2635;
+  --color-white:    #FFFFFF;
+  --color-line:     #E0DBD4;
+  --color-muted:    #6B6D7A;
+
+  /* Typografie */
+  --font-heading:   'Cormorant Garant', Georgia, serif;
+  --font-body:      'Inter', system-ui, sans-serif;
+
+  /* Schriftgrössen — Mobile First */
+  --size-h1:        clamp(2.25rem, 6vw, 3.75rem);
+  --size-h2:        clamp(1.75rem, 4vw, 2.5rem);
+  --size-h3:        clamp(1.25rem, 3vw, 1.5rem);
+  --size-body:      1.0625rem;
+  --size-small:     0.875rem;
+  --size-label:     0.6875rem;
+
+  /* Abstände */
+  --space-xs:       0.5rem;
+  --space-sm:       1rem;
+  --space-md:       2rem;
+  --space-lg:       4rem;
+  --space-xl:       6rem;
+  --space-section:  clamp(4rem, 8vw, 7rem);
+
+  /* Layout */
+  --max-width:      720px;
+  --max-width-wide: 1000px;
+  --padding-page:   clamp(1.25rem, 5vw, 2.5rem);
+
+  /* Übergänge */
+  --transition:     0.2s ease;
+}
+
 /* --- Reset & Base --- */
 *, *::before, *::after {
   box-sizing: border-box;
