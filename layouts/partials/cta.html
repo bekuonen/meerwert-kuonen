@@ -1,6 +1,6 @@
 <section class="cta-block">
   <div class="container">
-    <p>{{ with .ctaText }}{{ . }}{{ else }}Ein erstes Gespräch ist unverbindlich. Ohne Agenda. Mit Offenheit.{{ end }}</p>
+    <p>{{ with .Site.Params.ctaText }}{{ . }}{{ else }}Ein erstes Gespräch ist unverbindlich. Ohne Agenda. Mit Offenheit.{{ end }}</p>
     <a href="/kontakt/" class="btn btn--primary">Gespräch anfragen</a>
   </div>
 </section>
