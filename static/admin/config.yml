@@ -1,0 +1,85 @@
+backend:
+  name: github
+  repo: bekuonen/meerwert-ch
+  branch: main
+  base_url: https://sveltia-cms-auth.DEIN-WORKER.workers.dev
+
+media_folder: static/img
+public_folder: /img
+
+locale: de
+
+collections:
+
+  # ── SEITEN ─────────────────────────────────────────
+  - name: seiten
+    label: Seiten
+    label_singular: Seite
+    files:
+
+      - name: start
+        label: Start
+        file: content/_index.md
+        fields:
+          - { label: Headline, name: headline, widget: string }
+          - { label: Subtext, name: subtext, widget: string }
+          - { label: Haltungs-Text, name: haltung_text, widget: text }
+          - { label: Kontakt-Text, name: kontakt_text, widget: string }
+
+      - name: angebot
+        label: Angebot
+        file: content/angebot/_index.md
+        fields:
+          - { label: Intro, name: intro, widget: text }
+          - label: Felder
+            name: felder
+            widget: list
+            fields:
+              - { label: Titel, name: titel, widget: string }
+              - { label: Nummer, name: label, widget: string }
+              - { label: Text, name: text, widget: text }
+              - label: Punkte
+                name: punkte
+                widget: list
+                field: { label: Punkt, name: punkt, widget: string }
+
+      - name: ueber-mich
+        label: Über mich
+        file: content/ueber-mich/_index.md
+        fields:
+          - { label: Titel, name: title, widget: string }
+          - { label: Beschreibung, name: description, widget: string }
+          - { label: Text, name: body, widget: markdown }
+
+      - name: kontakt
+        label: Kontakt
+        file: content/kontakt/_index.md
+        fields:
+          - { label: Einladungstext, name: intro, widget: text }
+
+  # ── PERSPEKTIVEN ───────────────────────────────────
+  - name: perspektiven
+    label: Perspektiven
+    label_singular: Artikel
+    folder: content/perspektiven
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Titel, name: title, widget: string }
+      - { label: Datum, name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "DD.MM.YYYY" }
+      - label: Kategorie
+        name: kategorie
+        widget: select
+        options:
+          - { label: Übergänge, value: Übergänge }
+          - { label: Richtungsentscheide, value: Richtungsentscheide }
+          - { label: Führung, value: Führung }
+          - { label: Digitales, value: Digitales }
+      - label: Format
+        name: format
+        widget: select
+        options:
+          - { label: Gedanke, value: Gedanke }
+          - { label: Einordnung, value: Einordnung }
+      - { label: Teaser, name: teaser, widget: string, hint: "Ein Satz – erscheint in der Übersicht" }
+      - { label: Text, name: body, widget: markdown }

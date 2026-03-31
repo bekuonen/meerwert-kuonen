@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>{{ .Params.headline }}</h1>
+    <p class="hero-subtext">{{ .Params.subtext }}</p>
+    <a href="/kontakt/" class="btn btn--primary">{{ .Site.Params.ctaText }}</a>
+  </div>
+</section>
+
+<!-- HALTUNG -->
+<section class="section-haltung">
+  <div class="container">
+    <span class="label">{{ .Params.haltung_label }}</span>
+    <p>{{ .Params.haltung_text }}</p>
+    <a href="{{ .Params.haltung_link_url }}">{{ .Params.haltung_link_text }} →</a>
+  </div>
+</section>
+
+<!-- ANGEBOT -->
+{{ $angebot := site.GetPage "/angebot" }}
+{{ if $angebot }}
+<section class="section-angebot">
+  <div class="container container--wide">
+    <span class="label">{{ .Params.angebot_label }}</span>
+    <div class="angebot-grid">
+      {{ range $angebot.Params.felder }}
+      <div class="angebot-karte">
+        <span class="angebot-karte-nummer">{{ .label }}</span>
+        <h3>{{ .titel }}</h3>
+        <p>{{ .text | truncate 80 }}</p>
+      </div>
+      {{ end }}
+    </div>
+    <p style="margin-top: 2rem;">
+      <a href="/angebot/">Alle Felder ansehen →</a>
+    </p>
+  </div>
+</section>
+{{ end }}
+
+<!-- KONTAKT CTA -->
+<section class="section-kontakt-cta">
+  <div class="container">
+    <p>{{ .Params.kontakt_text }}</p>
+    <a href="/kontakt/" class="btn btn--primary">{{ .Site.Params.ctaText }}</a>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div class="container">
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <span class="label">{{ .Title }}</span>
+    <p>{{ .Params.intro }}</p>
+  </div>
+
+  <!-- FELDER -->
+  {{ range .Params.felder }}
+  <div class="angebot-feld">
+    <span class="label">{{ .label }} — {{ .titel }}</span>
+    <h2>{{ .titel }}</h2>
+    <p>{{ .text }}</p>
+    {{ if .punkte }}
+    <ul>
+      {{ range .punkte }}
+      <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <!-- ARBEITSWEISE -->
+  {{ if .Params.arbeitsweise_schritte }}
+  <section style="padding-top: var(--space-section);">
+    <span class="label">{{ .Params.arbeitsweise_label }}</span>
+    <div class="arbeitsweise-schritte">
+      {{ range .Params.arbeitsweise_schritte }}
+      <div class="arbeitsweise-schritt">
+        <h3>{{ .titel }}</h3>
+        <p>{{ .text }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+</div>
+
+{{ partial "cta.html" . }}
+{{ end }}

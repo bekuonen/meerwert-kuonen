@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  {{ with .Site.Params.canonicalURL }}<link rel="canonical" href="{{ . }}">{{ end }}
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:type" content="website">
+  <!-- CSS -->
+  {{ $css := resources.Get "css/main.css" | minify }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+</head>
+<body>
+
+  {{- partial "header.html" . -}}
+
+  <main id="main">
+    {{- block "main" . }}{{- end }}
+  </main>
+
+  {{- partial "footer.html" . -}}
+
+  <script>
+    // Mobile Navigation Toggle
+    const toggle = document.getElementById('nav-toggle');
+    const header = document.getElementById('site-header');
+    if (toggle && header) {
+      toggle.addEventListener('click', () => {
+        header.classList.toggle('nav-open');
+        const expanded = header.classList.contains('nav-open');
+        toggle.setAttribute('aria-expanded', expanded);
+      });
+      // Schliessen bei Link-Klick
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          header.classList.remove('nav-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>

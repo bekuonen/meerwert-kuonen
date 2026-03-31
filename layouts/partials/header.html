@@ -1,0 +1,31 @@
+<header class="site-header" id="site-header">
+  <nav class="nav-inner" aria-label="Hauptnavigation">
+
+    <a href="/" class="nav-logo" aria-label="meerwert – kuonen Startseite">
+      <img src="/img/logo.svg" alt="meerwert – kuonen" width="36" height="36">
+      <span class="nav-logo-text">meerwert – kuonen</span>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="/" {{ if .IsHome }}class="active" aria-current="page"{{ end }}>Start</a></li>
+      <li><a href="/angebot/" {{ if eq .Section "angebot" }}class="active" aria-current="page"{{ end }}>Angebot</a></li>
+      <li><a href="/ueber-mich/" {{ if eq .RelPermalink "/ueber-mich/" }}class="active" aria-current="page"{{ end }}>Über mich</a></li>
+      <li><a href="/perspektiven/" {{ if eq .Section "perspektiven" }}class="active" aria-current="page"{{ end }}>Perspektiven</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="/kontakt/" class="btn btn--primary">{{ .Site.Params.ctaText }}</a>
+    </div>
+
+    <button class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Menü öffnen"
+            aria-expanded="false"
+            aria-controls="nav-links">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </nav>
+</header>

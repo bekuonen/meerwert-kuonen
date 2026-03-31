@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="container">
+
+  <div class="artikel-header page-header">
+    <div class="artikel-karte-meta">
+      {{ with .Params.kategorie }}<span class="artikel-kategorie">{{ . }}</span>{{ end }}
+      {{ with .Params.format }}<span class="artikel-format">{{ . }}</span>{{ end }}
+    </div>
+    <h1>{{ .Title }}</h1>
+    <span class="artikel-datum">{{ .Date.Format "02.01.2006" }}</span>
+  </div>
+
+  <div class="artikel-body">
+    {{ .Content }}
+  </div>
+
+  <div style="margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid var(--color-line);">
+    <p style="color: var(--color-muted); margin-bottom: var(--space-md);">
+      Ein Gespräch dazu? Der Einstieg ist einfach und unverbindlich.
+    </p>
+    <a href="/kontakt/" class="btn btn--primary">{{ .Site.Params.ctaText }}</a>
+  </div>
+
+</div>
+{{ end }}

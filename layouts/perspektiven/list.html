@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="container">
+
+  <div class="page-header">
+    <span class="label">{{ .Title }}</span>
+    <p>{{ .Params.intro }}</p>
+  </div>
+
+  <div class="perspektiven-liste">
+    {{ range where .Site.RegularPages "Section" "perspektiven" }}
+    <article class="artikel-karte">
+      <div class="artikel-karte-meta">
+        {{ with .Params.kategorie }}<span class="artikel-kategorie">{{ . }}</span>{{ end }}
+        {{ with .Params.format }}<span class="artikel-format">{{ . }}</span>{{ end }}
+      </div>
+      <span class="artikel-datum">{{ .Date.Format "02.01.2006" }}</span>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ with .Params.teaser }}<p class="artikel-teaser">{{ . }}</p>{{ end }}
+      <a href="{{ .RelPermalink }}">Weiterlesen →</a>
+    </article>
+    {{ else }}
+    <p>Bald erscheinen hier erste Texte.</p>
+    {{ end }}
+  </div>
+
+</div>
+{{ end }}

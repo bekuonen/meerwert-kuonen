@@ -1,0 +1,24 @@
+baseURL = "https://meerwert.ch/"
+languageCode = "de-CH"
+title = "meerwert – kuonen"
+theme = ""
+enableRobotsTXT = true
+paginate = 10
+
+[params]
+  description = "Biografische Beratung für Menschen, die Orientierung suchen. Begleitung in Übergängen und Entscheidungen."
+  author = "Bernhard Kuonen"
+  email = "info@meerwert.ch"
+  location = "Luzern / Münster (Wallis)"
+  ctaText = "Gespräch anfragen"
+  ctaURL = "/kontakt/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML"]
+  page = ["HTML"]
+  section = ["HTML"]
