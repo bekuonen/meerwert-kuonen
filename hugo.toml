@@ -1,7 +1,6 @@
 baseURL = "https://meerwert.ch/"
 languageCode = "de-CH"
 title = "meerwert – kuonen"
-theme = ""
 enableRobotsTXT = true
 paginate = 10
 
