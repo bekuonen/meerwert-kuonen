@@ -2,7 +2,7 @@ backend:
   name: github
   repo: bekuonen/meerwert-ch
   branch: main
-  base_url: https://sveltia-cms-auth.DEIN-WORKER.workers.dev
+  base_url: https://cms-auth.bekuonen.workers.dev
 
 media_folder: static/img
 public_folder: /img
