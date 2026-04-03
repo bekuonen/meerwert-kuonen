@@ -1,51 +1,49 @@
 ---
 title: "Angebot"
 description: "Begleitung in beruflichen, biografischen und persönlichen Übergängen."
-intro: "Jedes Gespräch beginnt mit einer Klärung – was ist die Situation, was wird gesucht, was ist der nächste mögliche Schritt."
+intro: |
+  Übergänge haben eines gemeinsam:
+  Man verlässt etwas Sicheres — und betritt etwas noch Unbekanntes.
+  In diesem Zwischenraum entsteht die Frage nach Orientierung.
+  Genau da beginnt die Arbeit.
 
 felder:
-  - titel: "Übergänge"
+  - titel: "Berufliche Neuorientierung"
     label: "01"
-    text: "Berufliche Neuorientierung, biografische Brüche, schicksalhafte Wendungen oder neue Lebenslagen – wenn das Bisherige nicht mehr trägt und eine neue Richtung gesucht wird."
-    punkte:
-      - "Berufliche Neuorientierung und Sinnfragen"
-      - "Biografische Brüche durch Krankheit, Verlust oder Veränderung"
-      - "Neue Lebenslagen und unerwartete Wendungen"
-      - "Entwicklung tragfähiger nächster Schritte"
+    text: |
+      Manchmal ist es Unzufriedenheit. Manchmal ein Traum, der keine Ruhe lässt.
+      Manchmal einfach die Frage: Soll es wirklich so weitergehen?
+      Ohne vorschnelle Antworten — aber mit dem Raum, die eigene zu finden.
+      Beratung in Luzern oder im Goms.
 
-  - titel: "Richtungsentscheide"
+  - titel: "Biografische Übergänge"
     label: "02"
-    text: "Wenn mehrere Wege offenstehen und Klarheit gesucht wird. Strategische Entscheidungen brauchen keine schnellen Antworten – sondern gute Fragen und einen ruhigen Blick."
-    punkte:
-      - "Entscheidungen unter Unsicherheit"
-      - "Abwägen von Optionen und Konsequenzen"
-      - "Klärung von Werten und Prioritäten"
-      - "Entwicklung einer tragfähigen Entscheidungsgrundlage"
+    text: |
+      Manche Übergänge wählt man nicht.
+      In solchen Momenten hilft kein schneller Rat — sondern Raum, um zu erkunden, was jetzt noch trägt.
+      Diese Momente wollen gelebt und gestaltet sein. Manche davon kennt Bernhard Kuonen aus eigener Erfahrung.
+
+  - titel: "Entscheidungssituationen"
+    label: "03"
+    text: |
+      Manchmal kennt man die Optionen — und keine davon fühlt sich richtig an.
+      Das ist kein Denkfehler. Das ist ein Signal.
+      Im Gespräch wird aus dem Signal eine Richtung.
+      Ziel ist nicht die schnelle Wahl. Sondern die richtige.
 
   - titel: "Reflexion von Führung"
-    label: "03"
-    text: "Wenn Verantwortung getragen wird und Perspektiven gefragt sind. Führung braucht Distanz – die Fähigkeit, die eigene Rolle zu sehen und bewusst zu gestalten."
-    punkte:
-      - "Reflexion der eigenen Führungsrolle"
-      - "Umgang mit Druck und Erwartungen"
-      - "Entwicklung von Haltung und Perspektive"
-      - "Führung in Veränderungsprozessen"
-
-  - titel: "Digitale Begleitung"
     label: "04"
-    text: "Orientierung im Umgang mit KI und digitalen Werkzeugen. Begleitung bei Webprojekten für kleine Unternehmen und Einzelpersonen – als zugängliche Alternative für kleine Budgets."
-    punkte:
-      - "KI-Werkzeuge verstehen und sinnvoll einsetzen"
-      - "Digitale Transformation menschlich gestalten"
-      - "Webprojekte konzipieren, aufbauen und einführen"
-      - "Einfache, wartbare Lösungen für kleine Unternehmen"
+    text: |
+      Wer führt, ist selten allein — aber oft einsam.
+      Ein Gegenüber von aussen verändert, was gesagt werden kann.
+      Bernhard Kuonen hat selbst geführt — in sozialen, gemeinnützigen Organisationen und öffentlicher Verwaltung.
+      Er weiss, wie sich Verantwortung anfühlt.
 
-arbeitsweise_label: "Wie ich arbeite"
-arbeitsweise_schritte:
-  - titel: "Klären"
-    text: "Im ersten Schritt geht es darum, die Situation präzise zu verstehen."
-  - titel: "Reflektieren"
-    text: "Gemeinsam werden Perspektiven entwickelt und mögliche Wege sichtbar gemacht."
-  - titel: "Entscheiden"
-    text: "Ziel ist eine klare Grundlage für Entscheidungen und nächste Schritte."
+  - titel: "KI im Alltag"
+    label: "05"
+    text: |
+      KI ist keine Zukunftsmusik. Sie ist da — und läuft.
+      Goethes Zauberlehrling wollte auch nur helfen lassen.
+      Es geht darum, KI zu führen — nicht umgekehrt.
+      Bernhard Kuonen begleitet diesen Einstieg — praktisch, im eigenen Tempo.
 ---

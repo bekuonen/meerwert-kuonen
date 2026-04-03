@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: bekuonen/meerwert-ch
+  repo: bekuonen/meerwert-kuonen
   branch: main
   base_url: https://cms-auth.bekuonen.workers.dev
 
