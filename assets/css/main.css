@@ -182,13 +182,24 @@ section {
 }
 
 .nav-logo-text {
-  font-family: var(--font-heading);
   font-size: var(--size-small);
-  font-weight: 300;
   letter-spacing: 0.04em;
-  text-transform: lowercase;
   color: var(--color-text);
   display: none; /* Mobile: nur Icon */
+}
+
+.nav-logo-name {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  text-transform: lowercase;
+}
+
+.nav-logo-person {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-weight: 400;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
 }
 
 .nav-links {
