@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- meerwert · Wortmarke · Farbig · skalierbar -->
-<!-- meer: #1A1A1A Schwarz / wert: #C8102E Walliserrot -->
-<!-- Mindestgrösse: 120px Breite -->
+<!-- meerwert · Wortmarke · S/W dunkel · skalierbar -->
+<!-- Verwendung: Weiss auf dunklem Hintergrund, Negativdruck -->
 <svg viewBox="0 0 380 80" width="380" height="80"
      xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -10,7 +9,9 @@
       .logo { font-family: Syne, 'Arial Black', sans-serif; font-weight: 700; font-size: 64px; }
     </style>
   </defs>
+  <!-- Hintergrund dunkel (optional, kann entfernt werden) -->
+  <rect width="380" height="80" fill="#1A1A1A"/>
   <text x="4" y="66" class="logo">
-    <tspan fill="#4A5568">meer</tspan><tspan fill="#C8102E">wert</tspan>
+    <tspan fill="#A0AEC0">meer</tspan><tspan fill="#666666">wert</tspan>
   </text>
 </svg>

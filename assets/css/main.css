@@ -176,30 +176,10 @@ section {
   flex-shrink: 0;
 }
 
-.nav-logo img {
+.nav-logo-svg {
   height: 36px;
   width: auto;
-}
-
-.nav-logo-text {
-  font-size: var(--size-small);
-  letter-spacing: 0.04em;
-  color: var(--color-text);
-  display: none; /* Mobile: nur Icon */
-}
-
-.nav-logo-name {
-  font-family: var(--font-heading);
-  font-weight: 300;
-  text-transform: lowercase;
-}
-
-.nav-logo-person {
-  font-family: var(--font-body);
-  font-style: italic;
-  font-weight: 400;
-  text-transform: lowercase;
-  letter-spacing: 0.02em;
+  display: block;
 }
 
 .nav-links {
@@ -668,8 +648,8 @@ section {
    RESPONSIVE — Tablet +
    =========================== */
 @media (min-width: 640px) {
-  .nav-logo-text {
-    display: block;
+  .nav-logo-svg {
+    height: 40px;
   }
 
   .angebot-grid {
