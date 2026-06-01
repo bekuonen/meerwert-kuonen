@@ -6,19 +6,23 @@
     <p>{{ .Params.intro }}</p>
   </div>
 
+  {{- $key := .Site.Params.web3formsKey | default "" -}}
+  {{- $configured := ne $key "" -}}
   <div class="kontakt-form">
     <form
       name="kontakt"
       method="POST"
-      action="{{ .Params.danke_url }}"
-      data-web3forms-key="DEIN-WEB3FORMS-KEY"
+      action="https://api.web3forms.com/submit"
     >
+      <!-- Web3Forms Access Key (aus hugo.toml → params.web3formsKey; leer = deaktiviert) -->
+      <input type="hidden" name="access_key" value="{{ $key }}">
+      <input type="hidden" name="subject" value="Neue Anfrage über meerwert.ch">
+      <input type="hidden" name="redirect" value="{{ .Site.BaseURL }}danke/">
+
       <!-- Honeypot Spam-Schutz -->
       <div class="form-honey" aria-hidden="true">
         <input type="text" name="_honey" tabindex="-1" autocomplete="off">
       </div>
-      <input type="hidden" name="_subject" value="Neue Anfrage über meerwert.ch">
-      <input type="hidden" name="_redirect" value="{{ .Site.BaseURL }}danke/">
 
       <div class="form-group">
         <label for="name">Name</label>
@@ -35,7 +39,12 @@
         <textarea id="nachricht" name="nachricht" required rows="5"></textarea>
       </div>
 
-      <button type="submit" class="btn btn--primary">Nachricht senden</button>
+      <button type="submit" class="btn btn--primary"{{ if not $configured }} disabled{{ end }}>Nachricht senden</button>
+      {{ if not $configured }}
+      <p class="form-hinweis" style="margin-top: 1rem; color: var(--color-muted);">
+        Das Kontaktformular wird in Kürze aktiviert.
+      </p>
+      {{ end }}
     </form>
   </div>
 

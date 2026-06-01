@@ -23,7 +23,11 @@ collections:
         fields:
           - { label: Headline, name: headline, widget: string }
           - { label: Subtext, name: subtext, widget: string }
+          - { label: Haltungs-Label, name: haltung_label, widget: string }
           - { label: Haltungs-Text, name: haltung_text, widget: text }
+          - { label: "Haltung Link-Text", name: haltung_link_text, widget: string }
+          - { label: "Haltung Link-URL", name: haltung_link_url, widget: string }
+          - { label: Angebot-Label, name: angebot_label, widget: string }
           - { label: Kontakt-Text, name: kontakt_text, widget: string }
 
       - name: angebot

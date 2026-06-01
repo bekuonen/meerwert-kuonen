@@ -1,4 +1,7 @@
-# Cloudflare Pages Build-Konfiguration
+# Cloudflare Pages Build-Konfiguration — REFERENZ/DOKU.
+# Diese Datei wird von Cloudflare Pages NICHT gelesen; massgeblich ist allein
+# die Konfiguration im Cloudflare-Dashboard. Hier zur Nachvollziehbarkeit:
+#
 # Im Cloudflare Dashboard eintragen:
 #   Build command:   hugo --minify
 #   Build output:    public
@@ -6,6 +9,12 @@
 #
 # Environment Variables im Dashboard:
 #   HUGO_VERSION = 0.124.1
+#
+# Versionshinweis:
+#   - Dashboard/Build (dokumentiert): Hugo 0.124.1
+#   - Lokale Entwicklung (Stand dieses Audits): Hugo 0.161.1 (extended)
+#   Bei einem Upgrade Dashboard-Wert UND lokale Version synchron halten und
+#   einen Build verifizieren. An Cloudflare selbst wurde nichts geändert.
 
 [build]
   command = "hugo --minify"

@@ -6,16 +6,32 @@
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta name="author" content="{{ .Site.Params.author }}">
-  {{ with .Site.Params.canonicalURL }}<link rel="canonical" href="{{ . }}">{{ end }}
+  <link rel="canonical" href="{{ .Permalink }}">
   <!-- Open Graph -->
+  {{ $ogType := cond (and .IsPage (eq .Section "perspektiven")) "article" "website" }}
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:type" content="{{ $ogType }}">
+  <meta property="og:image" content="{{ "/img/og-image.jpg" | absURL }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:locale" content="de_CH">
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="twitter:image" content="{{ "/img/og-image.jpg" | absURL }}">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap">
   <!-- CSS -->
   {{ $css := resources.Get "css/main.css" | minify }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+  <!-- Strukturierte Daten (JSON-LD) -->
+  {{- partial "schema.html" . -}}
 </head>
 <body>
 

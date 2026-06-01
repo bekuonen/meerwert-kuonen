@@ -1,0 +1,38 @@
+{{/* Strukturierte Daten (JSON-LD).
+     Startseite: ProfessionalService inkl. Anbieter-Person.
+     Perspektiven-Beiträge: Article.
+     Es werden ausschliesslich vorhandene Daten verwendet. */}}
+
+{{- if .IsHome -}}
+  {{- $org := dict
+    "@context" "https://schema.org"
+    "@type" "ProfessionalService"
+    "name" .Site.Title
+    "url" .Site.BaseURL
+    "description" .Site.Params.description
+  -}}
+  {{- with .Site.Params.location }}{{ $org = merge $org (dict "areaServed" .) }}{{ end -}}
+  {{- with .Site.Params.email }}{{ $org = merge $org (dict "email" .) }}{{ end -}}
+  {{- with .Site.Params.author }}{{ $org = merge $org (dict "provider" (dict "@type" "Person" "name" .)) }}{{ end -}}
+  <script type="application/ld+json">
+{{ $org | jsonify (dict "indent" "  ") | safeJS }}
+  </script>
+{{- end -}}
+
+{{- if and .IsPage (eq .Section "perspektiven") -}}
+  {{- $desc := cond (ne (string .Description) "") (string .Description) .Site.Params.description -}}
+  {{- $article := dict
+    "@context" "https://schema.org"
+    "@type" "Article"
+    "headline" .Title
+    "description" $desc
+    "url" .Permalink
+    "author" (dict "@type" "Person" "name" .Site.Params.author)
+    "publisher" (dict "@type" "Organization" "name" .Site.Title)
+    "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+  -}}
+  {{- if not .Date.IsZero }}{{ $article = merge $article (dict "datePublished" (.Date.Format "2006-01-02")) }}{{ end -}}
+  <script type="application/ld+json">
+{{ $article | jsonify (dict "indent" "  ") | safeJS }}
+  </script>
+{{- end -}}

@@ -2,7 +2,7 @@ baseURL = "https://meerwert.ch/"
 languageCode = "de-CH"
 title = "meerwert – kuonen"
 enableRobotsTXT = true
-paginate = 10
+# (paginate entfernt — keine Pagination im Einsatz; Perspektiven-Liste rendert alle Beiträge direkt.)
 
 [params]
   description = "Biografische Beratung für Menschen, die Orientierung suchen. Begleitung in Übergängen und Entscheidungen."
@@ -11,10 +11,17 @@ paginate = 10
   location = "Luzern / Münster (Wallis)"
   ctaText = "Gespräch anfragen"
   ctaURL = "/kontakt/"
+  # Web3Forms Access Key für das Kontaktformular.
+  # Leer = Formular deaktiviert (kein Versand). Zum Aktivieren Key von
+  # https://web3forms.com eintragen (Format: UUID).
+  web3formsKey = ""
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
+      # unsafe = true erlaubt rohes HTML in Markdown-Inhalten. Bewusst aktiviert,
+      # damit im CMS gepflegte Texte bei Bedarf HTML enthalten dürfen. Vertretbar,
+      # da Inhalte ausschliesslich vom Betreiber (nicht von Dritten) stammen.
       unsafe = true
 
 [outputs]
