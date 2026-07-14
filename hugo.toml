@@ -7,14 +7,14 @@ enableRobotsTXT = true
 [params]
   description = "Biografische Beratung für Menschen, die Orientierung suchen. Begleitung in Übergängen und Entscheidungen."
   author = "Bernhard Kuonen"
-  email = "info@meerwert.ch"
+  email = "hallo@meerwert.ch"
   location = "Luzern / Münster (Wallis)"
   ctaText = "Gespräch anfragen"
   ctaURL = "/kontakt/"
   # Formspark-Formular-ID für das Kontaktformular (bewährter Stack).
   # Leer = Formular deaktiviert (kein Versand). Zum Aktivieren: Formular auf
   # https://formspark.io anlegen und die ID hier eintragen.
-  formsparkId = ""
+  formsparkId = "Eq8ClfM8p"
 
 [markup]
   [markup.goldmark]

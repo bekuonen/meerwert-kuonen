@@ -8,7 +8,7 @@ nocta: true
 Bernhard Kuonen
 Luzern / Münster (Wallis)
 
-E-Mail: [info@meerwert.ch](mailto:info@meerwert.ch)
+E-Mail: [hallo@meerwert.ch](mailto:hallo@meerwert.ch)
 
 **Verantwortlich für den Inhalt**
 Bernhard Kuonen

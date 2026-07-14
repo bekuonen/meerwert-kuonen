@@ -8,7 +8,7 @@ Der Schutz Ihrer Daten ist mir wichtig. Diese Website ist bewusst so gebaut, das
 
 **Verantwortlicher**
 Bernhard Kuonen, meerwert – kuonen, Luzern / Münster (Wallis)
-E-Mail: [info@meerwert.ch](mailto:info@meerwert.ch)
+E-Mail: [hallo@meerwert.ch](mailto:hallo@meerwert.ch)
 
 **Grundlage**
 Die Bearbeitung von Personendaten richtet sich nach dem Schweizer Datenschutzgesetz (DSG). Soweit anwendbar, werden auch die Vorgaben der europäischen Datenschutz-Grundverordnung (DSGVO) berücksichtigt.
