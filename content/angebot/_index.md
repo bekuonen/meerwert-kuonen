@@ -10,6 +10,7 @@ intro: |
 felder:
   - titel: "Berufliche Neuorientierung"
     label: "01"
+    kurz: "Wenn die Frage nicht mehr verschwindet, ob es wirklich so weitergehen soll."
     text: |
       Manchmal ist es Unzufriedenheit. Manchmal ein Traum, der keine Ruhe lässt.
       Manchmal einfach die Frage: Soll es wirklich so weitergehen?
@@ -18,6 +19,7 @@ felder:
 
   - titel: "Biografische Übergänge"
     label: "02"
+    kurz: "Wenn ein Lebensabschnitt endet, bevor der nächste sichtbar ist."
     text: |
       Manche Übergänge wählt man nicht.
       In solchen Momenten hilft kein schneller Rat — sondern Raum, um zu erkunden, was jetzt noch trägt.
@@ -25,6 +27,7 @@ felder:
 
   - titel: "Entscheidungssituationen"
     label: "03"
+    kurz: "Wenn die Optionen bekannt sind — und keine sich richtig anfühlt."
     text: |
       Manchmal kennt man die Optionen — und keine davon fühlt sich richtig an.
       Das ist kein Denkfehler. Das ist ein Signal.
@@ -33,17 +36,10 @@ felder:
 
   - titel: "Reflexion von Führung"
     label: "04"
+    kurz: "Wer führt, ist selten allein — aber oft einsam."
     text: |
       Wer führt, ist selten allein — aber oft einsam.
       Ein Gegenüber von aussen verändert, was gesagt werden kann.
       Bernhard Kuonen hat selbst geführt — in sozialen, gemeinnützigen Organisationen und öffentlicher Verwaltung.
       Er weiss, wie sich Verantwortung anfühlt.
-
-  - titel: "KI im Alltag"
-    label: "05"
-    text: |
-      KI ist keine Zukunftsmusik. Sie ist da — und läuft.
-      Goethes Zauberlehrling wollte auch nur helfen lassen.
-      Es geht darum, KI zu führen — nicht umgekehrt.
-      Bernhard Kuonen begleitet diesen Einstieg — praktisch, im eigenen Tempo.
 ---

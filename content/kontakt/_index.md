@@ -1,8 +1,8 @@
 ---
-intro: |-
-  Der erste Schritt ist ein Gespräch.
-  Unverbindlich, vertraulich — und ohne Agenda. Guten Tag
-description: Gespräch anfragen – unverbindlich, ohne Agenda.
-title: Kontakt
-danke_url: /danke/
+title: "Kontakt"
+description: "Gespräch anfragen – unverbindlich, ohne Agenda."
+intro: |
+  Schreiben Sie mir, worum es geht — zwei, drei Sätze reichen.
+  Ich antworte persönlich, in der Regel innert zwei Tagen.
+danke_url: "/danke/"
 ---

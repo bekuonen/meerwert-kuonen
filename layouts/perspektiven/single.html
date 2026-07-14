@@ -10,13 +10,13 @@
     <span class="artikel-datum">{{ .Date.Format "02.01.2006" }}</span>
   </div>
 
-  <div class="artikel-body">
+  <div class="artikel-body lesestrecke">
     {{ .Content }}
   </div>
 
-  <div style="margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid var(--color-line);">
-    <p style="color: var(--color-muted); margin-bottom: var(--space-md);">
-      Ein Gespräch dazu? Der Einstieg ist einfach und unverbindlich.
+  <div class="artikel-abschluss">
+    <p>
+      Wenn Sie ein Thema daraus beschäftigt — der erste Schritt ist ein Gespräch.
     </p>
     <a href="/kontakt/" class="btn btn--primary">{{ .Site.Params.ctaText }}</a>
   </div>

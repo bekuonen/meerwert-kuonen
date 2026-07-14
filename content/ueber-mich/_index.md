@@ -25,10 +25,17 @@ Viele Menschen wissen mehr, als sie sich zutrauen — und entscheiden unter ihre
 Nicht weil Mut oder Stärke fehlen. Sondern weil beides Raum braucht.
 Diesen Raum zu öffnen, ist der Kern meiner Arbeit.
 
-## Wie ich arbeite
+## Grundsätze
 
-Ein Grundsatz, der sich nicht verhandeln lässt:
-**Würde vor Effizienz. Eigenverantwortung vor Abhängigkeit. Befähigung statt Fürsorge.**
+Woran Sie mich messen können:
 
-Nicht: Was kann ich für diese Person tun?
-**Sondern: Was braucht sie, um es selbst zu können?**
+1. Würde vor Effizienz.
+2. Befähigung statt Fürsorge. Nicht: Was kann ich für Sie tun? Sondern: Was brauchen Sie, um es selbst zu können?
+3. Verstehen vor Entscheiden.
+4. Ich gebe keine Ratschläge — ich stelle Fragen, die tragen.
+5. Was Sie entscheiden, gehört Ihnen. Auch die Entscheidung, nichts zu ändern.
+6. KI ist mein Werkzeug, nicht mein Ersatz. Ich nutze sie in der Arbeit — geführt, nicht umgekehrt.
+
+## Und weiter
+
+Wie ich denke, zeigt sich am deutlichsten dort, wo ich schreibe: in den [Perspektiven](/perspektiven/).

@@ -88,8 +88,26 @@ bereits korrekt gesetzt). Es wurde bewusst **kein Platzhalterbild** generiert.
 
 ## Kontaktformular
 
-Das Formular (`layouts/kontakt/list.html`) nutzt **Web3Forms**. Der Access Key
-wird über den Hugo-Parameter `web3formsKey` in `hugo.toml` gesetzt. Solange er
-leer ist, ist der Absende-Button **deaktiviert** (kein versehentlicher Versand).
-Zum Aktivieren den Web3Forms-Key in `hugo.toml` → `[params]` → `web3formsKey`
-eintragen.
+Das Formular (`layouts/kontakt/list.html`) nutzt **Formspark**
+(https://formspark.io, bewährter Stack). Die Formular-ID wird über den
+Hugo-Parameter `formsparkId` in `hugo.toml` gesetzt. Solange sie leer ist, ist
+der Absende-Button **deaktiviert** (kein versehentlicher Versand); die Seite
+zeigt dann einen Hinweis mit der direkten E-Mail-Adresse.
+
+## Fonts & Logo (seit 2026-07)
+
+- **Fonts lokal** unter `static/fonts/` (woff2, latin), eingebunden via
+  `@font-face` in `assets/css/main.css` — **kein Google-Fonts-Request** mehr
+  (DSG/DSGVO). Quelle: fontsource-Pakete (Space Grotesk 300/400/500,
+  Lora 400/500/400italic).
+- **Logo:** `static/img/logo.svg` ist die Wortmarke in **Syne Bold als
+  Pfade** (keine Font-Abhängigkeit, rendert überall identisch). Der Header
+  bindet sie als `<img>` ein. Die übrigen Logo-Varianten (`logo-farbe.svg`,
+  `logo-sw-*.svg`) sind noch textbasiert und nur für Print/intern gedacht.
+- **Kleinschreibung** ist seit dem Konzept 2026-07 dem Logo vorbehalten;
+  Headlines und UI-Elemente in normaler Schreibung.
+
+## Rechtsseiten
+
+`content/impressum.md` und `content/datenschutz.md` (Layout
+`_default/single.html`, ohne CTA via `nocta: true`), verlinkt im Footer.

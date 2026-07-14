@@ -4,6 +4,7 @@
   <div class="page-header">
     <span class="label">{{ .Title }}</span>
     <p>{{ .Params.intro }}</p>
+    {{ with .Params.rhythmus }}<p class="rhythmus">{{ . }}</p>{{ end }}
   </div>
 
   <div class="perspektiven-liste">

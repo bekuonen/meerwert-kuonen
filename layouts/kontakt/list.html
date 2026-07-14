@@ -6,22 +6,20 @@
     <p>{{ .Params.intro }}</p>
   </div>
 
-  {{- $key := .Site.Params.web3formsKey | default "" -}}
-  {{- $configured := ne $key "" -}}
+  {{- $id := .Site.Params.formsparkId | default "" -}}
+  {{- $configured := ne $id "" -}}
   <div class="kontakt-form">
     <form
       name="kontakt"
       method="POST"
-      action="https://api.web3forms.com/submit"
+      action="https://submit-form.com/{{ $id }}"
     >
-      <!-- Web3Forms Access Key (aus hugo.toml → params.web3formsKey; leer = deaktiviert) -->
-      <input type="hidden" name="access_key" value="{{ $key }}">
-      <input type="hidden" name="subject" value="Neue Anfrage über meerwert.ch">
-      <input type="hidden" name="redirect" value="{{ .Site.BaseURL }}danke/">
+      <!-- Formspark-Formular-ID (aus hugo.toml → params.formsparkId; leer = deaktiviert) -->
+      <input type="hidden" name="_redirect" value="{{ .Site.BaseURL }}danke/">
 
-      <!-- Honeypot Spam-Schutz -->
+      <!-- Honeypot Spam-Schutz (Formspark: _honeypot) -->
       <div class="form-honey" aria-hidden="true">
-        <input type="text" name="_honey" tabindex="-1" autocomplete="off">
+        <input type="checkbox" name="_honeypot" tabindex="-1" autocomplete="off">
       </div>
 
       <div class="form-group">
@@ -35,17 +33,24 @@
       </div>
 
       <div class="form-group">
-        <label for="nachricht">Nachricht</label>
+        <label for="nachricht">Worum geht es?</label>
         <textarea id="nachricht" name="nachricht" required rows="5"></textarea>
       </div>
 
       <button type="submit" class="btn btn--primary"{{ if not $configured }} disabled{{ end }}>Nachricht senden</button>
       {{ if not $configured }}
-      <p class="form-hinweis" style="margin-top: 1rem; color: var(--color-muted);">
-        Das Kontaktformular wird in Kürze aktiviert.
+      <p class="form-hinweis">
+        Das Kontaktformular wird in Kürze aktiviert — schreiben Sie mir solange direkt per E-Mail.
       </p>
       {{ end }}
     </form>
+  </div>
+
+  <div class="kontakt-alt">
+    <p>
+      Lieber direkt? <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a><br>
+      <span class="kontakt-alt-orte">Gespräche in {{ .Site.Params.location }} — oder online.</span>
+    </p>
   </div>
 
 </div>

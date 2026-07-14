@@ -7,6 +7,12 @@
         <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
       </p>
     </div>
-    <p class="footer-copy">© {{ now.Year }} Bernhard Kuonen</p>
+    <div class="footer-meta">
+      <nav class="footer-legal" aria-label="Rechtliches">
+        <a href="/impressum/">Impressum</a>
+        <a href="/datenschutz/">Datenschutz</a>
+      </nav>
+      <p class="footer-copy">© {{ now.Year }} Bernhard Kuonen</p>
+    </div>
   </div>
 </footer>

@@ -1,17 +1,18 @@
 {{ define "main" }}
+{{ $hasPortrait := fileExists "static/img/portrait.jpg" }}
 <div class="container">
   <div class="page-header">
     <h1>{{ .Title }}</h1>
   </div>
 
-  <div class="ueber-mich-layout">
+  <div class="{{ if $hasPortrait }}ueber-mich-layout{{ end }}">
 
+    {{ if $hasPortrait }}
     <!-- Portrait -->
     <div class="ueber-mich-portrait">
-      {{ if fileExists "static/img/portrait.jpg" }}
       <img src="/img/portrait.jpg" alt="Bernhard Kuonen" width="320" height="400">
-      {{ end }}
     </div>
+    {{ end }}
 
     <!-- Text -->
     <div class="ueber-mich-content">

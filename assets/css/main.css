@@ -3,7 +3,49 @@
    CSS Mobile First
    =========================== */
 
-/* Google Fonts werden via <link> im <head> (baseof.html) geladen — kein @import (render-blockierend). */
+/* --- Lokale Fonts (kein Google-Request, DSG/DSGVO-sauber) --- */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/space-grotesk-latin-300-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/space-grotesk-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/space-grotesk-latin-500-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/lora-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/lora-latin-500-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/lora-latin-400-italic.woff2') format('woff2');
+}
 
 /* --- CSS-Variablen --- */
 :root {
@@ -94,13 +136,11 @@ h1, h2, h3, h4 {
 h1 {
   font-size: var(--size-h1);
   font-weight: 500;
-  text-transform: lowercase;
   letter-spacing: -0.02em;
 }
 
 h2 {
   font-size: var(--size-h2);
-  text-transform: lowercase;
   letter-spacing: -0.01em;
 }
 
@@ -123,7 +163,6 @@ p:last-child {
   font-size: var(--size-label);
   font-weight: 500;
   letter-spacing: 0.12em;
-  text-transform: lowercase;
   color: var(--color-accent);
   display: block;
   margin-bottom: var(--space-sm);
@@ -195,7 +234,6 @@ section {
   font-weight: 400;
   color: var(--color-text);
   letter-spacing: 0.02em;
-  text-transform: lowercase;
   text-decoration: none;
   transition: color var(--transition);
 }
@@ -215,7 +253,6 @@ section {
   font-size: var(--size-small);
   font-weight: 500;
   letter-spacing: 0.03em;
-  text-transform: lowercase;
   padding: 0.625rem 1.25rem;
   border-radius: 2px;
   cursor: pointer;
@@ -614,14 +651,12 @@ section {
   font-size: var(--size-small);
   font-weight: 300;
   letter-spacing: 0.04em;
-  text-transform: lowercase;
   color: var(--color-text);
 }
 
 .footer-info {
   font-family: var(--font-heading);
   font-size: var(--size-small);
-  text-transform: lowercase;
   color: var(--color-muted);
 }
 
@@ -632,7 +667,6 @@ section {
 .footer-copy {
   font-family: var(--font-heading);
   font-size: var(--size-label);
-  text-transform: lowercase;
   color: var(--color-muted);
   margin-top: var(--space-sm);
 }
@@ -691,4 +725,116 @@ section {
     position: sticky;
     top: 6rem;
   }
+}
+
+/* ===========================
+   KONZEPT-UMSETZUNG 2026-07
+   =========================== */
+
+/* Rhythmus-Versprechen (Perspektiven) */
+.rhythmus {
+  font-family: var(--font-heading);
+  font-size: var(--size-small);
+  color: var(--color-accent);
+  margin-top: var(--space-sm);
+}
+
+/* Lesestrecke: Perspektiven-Beiträge als sorgfältig gesetzter Text */
+.lesestrecke {
+  max-width: 60ch;
+}
+
+.lesestrecke p {
+  font-size: 1.125rem;
+  line-height: 1.85;
+  margin-bottom: 1.75rem;
+}
+
+.lesestrecke p:first-child::first-line {
+  letter-spacing: 0.005em;
+}
+
+/* Artikel-Abschluss: leise Einladung */
+.artikel-abschluss {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-line);
+}
+
+.artikel-abschluss p {
+  color: var(--color-muted);
+  max-width: 48ch;
+  margin-bottom: var(--space-md);
+}
+
+/* Kontakt: direkte Alternative */
+.kontakt-alt {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-line);
+  max-width: 480px;
+}
+
+.kontakt-alt p {
+  color: var(--color-muted);
+}
+
+.kontakt-alt-orte {
+  font-size: var(--size-small);
+}
+
+.form-hinweis {
+  margin-top: 1rem;
+  color: var(--color-muted);
+  font-size: var(--size-small);
+}
+
+/* Footer: Rechtliches */
+.footer-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.footer-legal {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.footer-legal a {
+  font-family: var(--font-heading);
+  font-size: var(--size-label);
+  color: var(--color-muted);
+}
+
+/* Inhaltsseiten (Impressum, Datenschutz) */
+.page-content {
+  max-width: 60ch;
+  padding-bottom: var(--space-section);
+}
+
+/* Grundsätze (Über mich): nummerierte Positionen */
+.ueber-mich-content ol {
+  list-style: none;
+  counter-reset: grundsatz;
+  padding: 0;
+  margin: var(--space-md) 0;
+}
+
+.ueber-mich-content ol li {
+  counter-increment: grundsatz;
+  position: relative;
+  padding: 0.875rem 0 0.875rem 2.75rem;
+  border-top: 1px solid var(--color-line);
+}
+
+.ueber-mich-content ol li::before {
+  content: counter(grundsatz, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  font-family: var(--font-heading);
+  font-size: var(--size-label);
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
 }

@@ -2,11 +2,11 @@
 title: "meerwert – kuonen"
 description: "Biografische Beratung für Menschen, die Orientierung suchen."
 headline: |
-  sie wissen mehr, als sie denken.
-  manchmal braucht es den richtigen raum — und das richtige gespräch.
+  Sie wissen mehr, als Sie denken.
+  Manchmal braucht es den richtigen Raum — und das richtige Gespräch.
 subtext: |
-  nicht mit fertigen antworten — sondern mit dem raum, die eigenen zu finden.
-  für Menschen, die einen nächsten schritt suchen.
+  Nicht mit fertigen Antworten — sondern mit dem Raum, die eigenen zu finden.
+  Für Menschen, die einen nächsten Schritt suchen.
 haltung_label: "Haltung"
 haltung_text: |
   Keine ausgetretenen Pfade.

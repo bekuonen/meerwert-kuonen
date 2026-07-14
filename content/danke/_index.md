@@ -1,6 +1,6 @@
 ---
 title: "Nachricht erhalten"
-description: "Deine Nachricht ist angekommen."
+description: "Ihre Nachricht ist angekommen."
 ---
 
-Deine Nachricht ist angekommen. Ich melde mich in Kürze.
+Ihre Nachricht ist angekommen. Sie hören von mir — in der Regel innert zwei Tagen.

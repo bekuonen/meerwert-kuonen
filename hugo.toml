@@ -11,10 +11,10 @@ enableRobotsTXT = true
   location = "Luzern / Münster (Wallis)"
   ctaText = "Gespräch anfragen"
   ctaURL = "/kontakt/"
-  # Web3Forms Access Key für das Kontaktformular.
-  # Leer = Formular deaktiviert (kein Versand). Zum Aktivieren Key von
-  # https://web3forms.com eintragen (Format: UUID).
-  web3formsKey = ""
+  # Formspark-Formular-ID für das Kontaktformular (bewährter Stack).
+  # Leer = Formular deaktiviert (kein Versand). Zum Aktivieren: Formular auf
+  # https://formspark.io anlegen und die ID hier eintragen.
+  formsparkId = ""
 
 [markup]
   [markup.goldmark]

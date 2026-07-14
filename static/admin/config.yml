@@ -41,6 +41,7 @@ collections:
             fields:
               - { label: Titel, name: titel, widget: string }
               - { label: Nummer, name: label, widget: string }
+              - { label: Kurzsatz, name: kurz, widget: string, hint: "Ein vollständiger Satz – erscheint auf der Startseite" }
               - { label: Text, name: text, widget: text }
               - label: Punkte
                 name: punkte
@@ -60,6 +61,20 @@ collections:
         file: content/kontakt/_index.md
         fields:
           - { label: Einladungstext, name: intro, widget: text }
+
+      - name: impressum
+        label: Impressum
+        file: content/impressum.md
+        fields:
+          - { label: Titel, name: title, widget: string }
+          - { label: Text, name: body, widget: markdown }
+
+      - name: datenschutz
+        label: Datenschutz
+        file: content/datenschutz.md
+        fields:
+          - { label: Titel, name: title, widget: string }
+          - { label: Text, name: body, widget: markdown }
 
   # ── PERSPEKTIVEN ───────────────────────────────────
   - name: perspektiven

@@ -29,7 +29,7 @@
       <div class="angebot-karte">
         <span class="angebot-karte-nummer">{{ .label }}</span>
         <h3>{{ .titel }}</h3>
-        <p>{{ .text | truncate 80 }}</p>
+        <p>{{ with .kurz }}{{ . }}{{ else }}{{ .text | truncate 80 }}{{ end }}</p>
       </div>
       {{ end }}
     </div>
