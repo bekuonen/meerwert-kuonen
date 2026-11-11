@@ -1,3 +1,30 @@
+# Umzug zu cyon – Stand 11. November 2026
+
+Die Umstellung wird vor der noch ausstehenden Datenschutz-Auskunft von cyon vorbereitet. Eine ausschliessliche Bearbeitung in CH/EU ist nicht bestätigt.
+
+- Gültiges Repository bleibt `bekuonen/meerwert-kuonen`.
+- Neues Ziel: cyon-Hosting «meerwert», Webroot `public_html/meerwert.ch`.
+- Site-Build mit Hugo 0.161.1 erfolgreich.
+- Kontaktformular durch direkten E-Mail-Link ersetzt; keine Formspark-Aufrufe mehr.
+- Datenschutzerklärung für cyon/Migadu aktualisiert und offene Standortfragen offengelegt.
+- Sicherheitsheader in `static/.htaccess`; keine Verzeichnisauflistung, keine externen Skripte oder Form-Submits.
+- Das mit Cloudflare/GitHub verbundene CMS unter `static/admin` bleibt als Quellcode erhalten, wird aber nicht auf cyon veröffentlicht. Inhalte vorerst im Repository pflegen und neu bauen.
+- Website-Paket auf cyon hochgeladen und entpackt. Vorschau `vyyaxyllao.cyon.link` meldet noch «Domain nicht eingerichtet»; noch keine Live-Freigabe.
+- Öffentliche Nameserver weiterhin Cloudflare (`amy.ns.cloudflare.com`, `amir.ns.cloudflare.com`). DNS noch nicht geändert. Die cyon-Zone enthält Standard-Mailwerte und darf nicht ungeprüft aktiviert werden! Vollständige bisherige Zone einschliesslich Migadu MX/SPF/DKIM/DMARC, Nextcloud und weiteren Subdomains vor einer Nameserver-Umstellung sichern und übernehmen.
+- HTTPS auf cyon für meerwert.ch/www.meerwert.ch vor produktiver Umschaltung verifizieren. Keine Schutzmechanismen oder DNSSEC blind abschalten.
+- Rückfall: unveränderte Cloudflare-Installation und bisherige DNS-Werte bis zur Abnahme erhalten.
+
+## Paket erstellen
+
+```sh
+hugo --minify
+python scripts/package_cyon.py /absoluter/pfad/meerwert-cyon.zip
+```
+
+Nur das generierte Paket entpacken; niemals das Quellrepository oder Zugangsdaten in den Webroot hochladen. Das Installationsarchiv anschliessend ausserhalb des Webroots aufbewahren.
+
+## Bisherige Dokumentation (Cloudflare, vor Umzug)
+
 # meerwert.ch — Website
 
 Statische Website von **meerwert – kuonen** (biografische Beratung, Bernhard Kuonen).

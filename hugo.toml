@@ -11,10 +11,6 @@ enableRobotsTXT = true
   location = "Luzern / Münster (Wallis)"
   ctaText = "Gespräch anfragen"
   ctaURL = "/kontakt/"
-  # Formspark-Formular-ID für das Kontaktformular (bewährter Stack).
-  # Leer = Formular deaktiviert (kein Versand). Zum Aktivieren: Formular auf
-  # https://formspark.io anlegen und die ID hier eintragen.
-  formsparkId = "Eq8ClfM8p"
 
 [markup]
   [markup.goldmark]
