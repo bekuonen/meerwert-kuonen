@@ -1,6 +1,6 @@
 # Umzug zu cyon – Stand 11. November 2026
 
-Die Umstellung wird vor der noch ausstehenden Datenschutz-Auskunft von cyon vorbereitet. Eine ausschliessliche Bearbeitung in CH/EU ist nicht bestätigt.
+Die Website wurde am 11. November 2026 um ca. 22:19 Uhr (Europe/Zurich) auf cyon umgestellt. Die Datenschutz-Auskunft von cyon steht weiterhin aus. Eine ausschliessliche Bearbeitung in CH/EU ist nicht bestätigt.
 
 - Gültiges Repository bleibt `bekuonen/meerwert-kuonen`.
 - Neues Ziel: cyon-Hosting «meerwert», Webroot `public_html/meerwert.ch`.
@@ -9,10 +9,15 @@ Die Umstellung wird vor der noch ausstehenden Datenschutz-Auskunft von cyon vorb
 - Datenschutzerklärung für cyon/Migadu aktualisiert und offene Standortfragen offengelegt.
 - Sicherheitsheader in `static/.htaccess`; keine Verzeichnisauflistung, keine externen Skripte oder Form-Submits.
 - Das mit Cloudflare/GitHub verbundene CMS unter `static/admin` bleibt als Quellcode erhalten, wird aber nicht auf cyon veröffentlicht. Inhalte vorerst im Repository pflegen und neu bauen.
-- Website-Paket auf cyon hochgeladen und entpackt. Vorschau `vyyaxyllao.cyon.link` meldet noch «Domain nicht eingerichtet»; noch keine Live-Freigabe.
-- Öffentliche Nameserver weiterhin Cloudflare (`amy.ns.cloudflare.com`, `amir.ns.cloudflare.com`). DNS noch nicht geändert. Die cyon-Zone enthält Standard-Mailwerte und darf nicht ungeprüft aktiviert werden! Vollständige bisherige Zone einschliesslich Migadu MX/SPF/DKIM/DMARC, Nextcloud und weiteren Subdomains vor einer Nameserver-Umstellung sichern und übernehmen.
-- HTTPS auf cyon für meerwert.ch/www.meerwert.ch vor produktiver Umschaltung verifizieren. Keine Schutzmechanismen oder DNSSEC blind abschalten.
-- Rückfall: unveränderte Cloudflare-Installation und bisherige DNS-Werte bis zur Abnahme erhalten.
+- Produktiv: cyon-Hosting «meerwert», Server s136.cyon.net, IPv4 149.126.4.145.
+- DNS: `meerwert.ch A 149.126.4.145`; `www CNAME meerwert.ch`, beide «Nur DNS». Nameserver bleiben amy.ns.cloudflare.com / amir.ns.cloudflare.com. Cloudflare dient weiterhin als DNS-Anbieter und für bestehende andere Dienste; die Website läuft direkt auf cyon.
+- Gültige kostenlose SSL-Zertifikate für meerwert.ch und www.meerwert.ch installiert; beide HTTPS-Adressen mit HTTP 200 und erfolgreicher Zertifikatsprüfung getestet. HTTP wird jeweils per 301 auf HTTPS umgeleitet.
+- Migadu MX (10 aspmx1 / 20 aspmx2), SPF, drei DKIM-CNAMEs, DMARC und Verifizierungseintrag unverändert geprüft. Kein Mailversand/-empfang getestet.
+- `cloud.meerwert.ch` bleibt CNAME auf `261109kcj7ar5rvqv3g.nextcloud.hosting.zone`; HTTPS leitet zur Nextcloud-Anmeldung weiter. MCP-/Vault-Einträge und übrige DNS-Einträge unverändert.
+- Hauptseiten, CSS und Logo am Ziel geprüft; Kontakt mit mailto:hallo@meerwert.ch, keine Formspark-Aufrufe. /admin/ liefert 404.
+- Installationsarchiv aus dem Webroot nach `/home/damyvore/sicherung/meerwert-cyon.zip` verschoben; öffentliche Archiv-URL liefert 404.
+- Die Preview-Domain vyyaxyllao.cyon.link meldet weiterhin «Domain nicht eingerichtet», obwohl die Zuordnung in my.cyon korrekt angezeigt wird. Für den Betrieb nicht erforderlich; produktive Domains wurden direkt geprüft.
+- Rückfall: bisherige Cloudflare-Pages-Installation bleibt erhalten. Vorherige Web-DNS-Werte: Hauptdomain und www jeweils CNAME auf meerwert-kuonen.pages.dev mit Proxy und TTL Auto. Für einen Rückfall beide Werte wiederherstellen.
 
 ## Paket erstellen
 
