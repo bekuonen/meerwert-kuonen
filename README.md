@@ -19,6 +19,23 @@ Die Website wurde am 11. November 2026 um ca. 22:19 Uhr (Europe/Zurich) auf cyon
 - Die Preview-Domain vyyaxyllao.cyon.link meldet weiterhin «Domain nicht eingerichtet», obwohl die Zuordnung in my.cyon korrekt angezeigt wird. Für den Betrieb nicht erforderlich; produktive Domains wurden direkt geprüft.
 - Rückfall: bisherige Cloudflare-Pages-Installation bleibt erhalten. Vorherige Web-DNS-Werte: Hauptdomain und www jeweils CNAME auf meerwert-kuonen.pages.dev mit Proxy und TTL Auto. Für einen Rückfall beide Werte wiederherstellen.
 
+
+## Überprüfung und DNS-Vorbereitung am 11. November 2026
+
+**Website auf cyon produktiv; vollständige DNS-Delegation noch nicht erfolgt.**
+
+- Die Änderung aus Commit 3c27c232 (Monatsversprechen entfernt) wurde auch in der veröffentlichten Perspektiven-HTML-Datei auf cyon nachgeführt und öffentlich sowie im Browser geprüft.
+- Auf meerwert.ch und www.meerwert.ch: Start, Angebot, Über mich, Perspektiven samt Artikel, Kontakt, Impressum und Datenschutz über HTTPS jeweils HTTP 200 von 149.126.4.145. Kontakt enthält mailto und kein Formular; keine Formspark-Verweise, kein Monatsversprechen. Datenschutz nennt cyon/Migadu.
+- Zertifikat für beide Webnamen gültig bis 9. Februar 2027; HTTP jeweils 301 auf HTTPS.
+- Vollständiger Cloudflare-BIND-Export (15 Nutzdaten-Records) im Benutzerbrowser gesichert: `~/Library/Mobile Documents/com~apple~CloudDocs/00_Inbox/Chrome-Download/meerwert.ch.txt`. Ursprüngliche cyon-Zone zusätzlich als `cyon-zonedump-meerwert.ch-2026-11-11-223944.json` exportiert.
+- Bereinigte Importdatei: `~/Downloads/meerwert-cyon-dns-2026-11-11.txt`. Alle 15 Nutzdaten-Records übernommen; cyon erzeugt zusätzlich SOA und zwei NS. cyon-Standard-MX/SPF/Mail-Autodiscovery nicht aktiviert. E-Mail-Routing auf **Extern** gestellt. Werte direkt auf ns1.cyon.ch und ns2.cyon.ch identisch geprüft.
+- Registrar: NOVATREND, angemeldeter Zugang zur Domainverwaltung vorhanden. Registrar bestätigt: keine DS-Records, DNSSEC nicht aktiv; öffentliche Registry-Prüfung entspricht dem.
+- Migadu MX/SPF/DKIM/DMARC erhalten, beide MX-Server liefern SMTP-Banner. Tatsächlicher Versand und Empfang wurden nicht getestet.
+- Nextcloud unter cloud.meerwert.ch über gültiges HTTPS bis zur Loginseite mit HTTP 200 geprüft.
+- **Blocker für Nameserverwechsel:** Der Nutzer hat ausdrücklich bestätigt, dass die MCP-Dienste unverändert bestehen bleiben müssen. mcp-neu verwendet einen Cloudflare-Tunnel; vault/vault-neu verwenden Cloudflare-MCP-Portale. Die bestehenden proxied CNAMEs allein liefern bei einem exklusiven Wechsel zu cyon nicht deren Proxy-Funktion. Cloudflare Partial Setup für externes autoritatives DNS setzt Business/Enterprise voraus (https://developers.cloudflare.com/dns/zone-setups/partial-setup/).
+- Daher Nameserver beim Registrar **nicht geändert**: weiterhin amy.ns.cloudflare.com / amir.ns.cloudflare.com. Keine kostenpflichtige Tarifänderung und keine Änderung der MCP-Dienste vorgenommen. Die wichtigen Dienste bleiben auf ihrer bisherigen Konfiguration. Die bei cyon vorbereiteten MCP-CNAME-Werte sind eine Kopie der DNS-Daten, kein verifizierter Ersatz für Cloudflare Proxy/Tunnel.
+- Cloudflare-Installation und Zone bleiben für Rückfall und MCP erhalten. Ein Abschluss der vollständigen DNS-Migration darf erst nach einer funktionierenden MCP-Lösung dokumentiert werden.
+
 ## Paket erstellen
 
 ```sh
