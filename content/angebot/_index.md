@@ -1,45 +1,32 @@
 ---
 title: "Angebot"
-description: "Begleitung in beruflichen, biografischen und persönlichen Übergängen."
+description: "Berufliche Neuorientierung, biografische Übergänge, konkrete Entscheidungen und Reflexion von Führung: vier miteinander verbundene Beratungsfelder."
 intro: |
-  Übergänge haben eines gemeinsam:
-  Man verlässt etwas Sicheres — und betritt etwas noch Unbekanntes.
-  In diesem Zwischenraum entsteht die Frage nach Orientierung.
-  Genau da beginnt die Arbeit.
-
+  Eine berufliche Veränderung, ein neuer Lebensabschnitt, eine anstehende Entscheidung oder Verantwortung in der Führung: Der Ausgangspunkt bestimmt, woran wir gemeinsam arbeiten. Die vier Beratungsfelder greifen dabei ineinander.
 felder:
   - titel: "Berufliche Neuorientierung"
     label: "01"
-    kurz: "Wenn die Frage nicht mehr verschwindet, ob es wirklich so weitergehen soll."
+    kurz: "Die berufliche Situation prüfen, passende Aufgaben finden und realistische Möglichkeiten erarbeiten."
     text: |
-      Manchmal ist es Unzufriedenheit. Manchmal ein Traum, der keine Ruhe lässt.
-      Manchmal einfach die Frage: Soll es wirklich so weitergehen?
-      Ohne vorschnelle Antworten — aber mit dem Raum, die eigene zu finden.
-      Beratung in Luzern oder im Goms.
-
+      Sie möchten Ihre berufliche Situation verändern oder prüfen, ob eine Veränderung sinnvoll ist. Wir betrachten Ihre Erfahrungen und Fähigkeiten, klären Ihre Ansprüche an die Arbeit und prüfen realistische Möglichkeiten.
+    fokus: "Welche berufliche Aufgabe passt zu Ihnen – und wie kommen Sie dorthin?"
   - titel: "Biografische Übergänge"
     label: "02"
-    kurz: "Wenn ein Lebensabschnitt endet, bevor der nächste sichtbar ist."
+    kurz: "Nach einer Veränderung klären, was weiterhin trägt und wie Sie Ihren nächsten Lebensabschnitt gestalten möchten."
     text: |
-      Manche Übergänge wählt man nicht.
-      In solchen Momenten hilft kein schneller Rat — sondern Raum, um zu erkunden, was jetzt noch trägt.
-      Diese Momente wollen gelebt und gestaltet sein. Manche davon kennt Bernhard Kuonen aus eigener Erfahrung.
-
+      Eine Pensionierung, eine Krankheit oder eine veränderte familiäre Situation kann den bisherigen Alltag infrage stellen. Wir besprechen, was sich verändert hat, was weiterhin trägt und wie Sie Ihr Leben unter den neuen Bedingungen gestalten möchten.
+    fokus: "Wie möchten und können Sie Ihren nächsten Lebensabschnitt gestalten?"
+    hinweis: "Die Beratung ersetzt keine Psychotherapie."
   - titel: "Entscheidungssituationen"
     label: "03"
-    kurz: "Wenn die Optionen bekannt sind — und keine sich richtig anfühlt."
+    kurz: "Möglichkeiten und Folgen einer konkreten Entscheidung prüfen und das weitere Vorgehen festlegen."
     text: |
-      Manchmal kennt man die Optionen — und keine davon fühlt sich richtig an.
-      Das ist kein Denkfehler. Das ist ein Signal.
-      Im Gespräch wird aus dem Signal eine Richtung.
-      Ziel ist nicht die schnelle Wahl. Sondern die richtige.
-
+      Eine konkrete Entscheidung steht an. Wir ordnen die Möglichkeiten, prüfen Voraussetzungen und Folgen und machen widersprüchliche Interessen sichtbar. Dabei klären wir auch, welche Informationen noch fehlen und welche Unsicherheit sich nicht auflösen lässt.
+    fokus: "Eine anstehende Entscheidung begründet treffen und das weitere Vorgehen festlegen."
   - titel: "Reflexion von Führung"
     label: "04"
-    kurz: "Wer führt, ist selten allein — aber oft einsam."
+    kurz: "Konkrete Führungssituationen besprechen, die eigene Rolle klären und das Vorgehen überprüfen."
     text: |
-      Wer führt, ist selten allein — aber oft einsam.
-      Ein Gegenüber von aussen verändert, was gesagt werden kann.
-      Bernhard Kuonen hat selbst geführt — in sozialen, gemeinnützigen Organisationen und öffentlicher Verwaltung.
-      Er weiss, wie sich Verantwortung anfühlt.
+      Sie tragen Verantwortung für Mitarbeitende oder eine Organisation. Im vertraulichen Gespräch prüfen wir konkrete Führungssituationen: schwierige Gespräche, Konflikte, Veränderungen oder Erwartungen, die sich kaum miteinander vereinbaren lassen. Ich bringe meine Führungserfahrung ein und hinterfrage mit Ihnen das eigene Vorgehen.
+    fokus: "Die eigene Führungsrolle klären und im beruflichen Alltag wirksam handeln."
 ---

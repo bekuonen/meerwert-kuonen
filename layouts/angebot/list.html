@@ -13,6 +13,8 @@
     <span class="label">{{ .label }} — {{ .titel }}</span>
     <h2>{{ .titel }}</h2>
     <p>{{ .text }}</p>
+    {{ with .fokus }}<p><strong>Im Mittelpunkt:</strong> {{ . }}</p>{{ end }}
+    {{ with .hinweis }}<p>{{ . }}</p>{{ end }}
     {{ if .punkte }}
     <ul>
       {{ range .punkte }}
@@ -32,6 +34,8 @@
       <div class="arbeitsweise-schritt">
         <h3>{{ .titel }}</h3>
         <p>{{ .text }}</p>
+    {{ with .fokus }}<p><strong>Im Mittelpunkt:</strong> {{ . }}</p>{{ end }}
+    {{ with .hinweis }}<p>{{ . }}</p>{{ end }}
       </div>
       {{ end }}
     </div>
