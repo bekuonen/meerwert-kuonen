@@ -3,7 +3,7 @@
 
   <!-- PAGE HEADER -->
   <div class="page-header">
-    <span class="label">{{ .Title }}</span>
+    <h1>{{ .Title }}</h1>
     <p>{{ .Params.intro }}</p>
   </div>
 
@@ -25,8 +25,8 @@
 
   <!-- ARBEITSWEISE -->
   {{ if .Params.arbeitsweise_schritte }}
-  <section style="padding-top: var(--space-section);">
-    <span class="label">{{ .Params.arbeitsweise_label }}</span>
+  <section>
+    <h2 class="label">{{ .Params.arbeitsweise_label }}</h2>
     <div class="arbeitsweise-schritte">
       {{ range .Params.arbeitsweise_schritte }}
       <div class="arbeitsweise-schritt">

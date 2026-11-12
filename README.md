@@ -1,3 +1,30 @@
+# Umzug zu cyon – Stand 11. November 2026
+
+Die Umstellung wird vor der noch ausstehenden Datenschutz-Auskunft von cyon vorbereitet. Eine ausschliessliche Bearbeitung in CH/EU ist nicht bestätigt.
+
+- Gültiges Repository bleibt `bekuonen/meerwert-kuonen`.
+- Neues Ziel: cyon-Hosting «meerwert», Webroot `public_html/meerwert.ch`.
+- Site-Build mit Hugo 0.161.1 erfolgreich.
+- Kontaktformular durch direkten E-Mail-Link ersetzt; keine Formspark-Aufrufe mehr.
+- Datenschutzerklärung für cyon/Migadu aktualisiert und offene Standortfragen offengelegt.
+- Sicherheitsheader in `static/.htaccess`; keine Verzeichnisauflistung, keine externen Skripte oder Form-Submits.
+- Das mit Cloudflare/GitHub verbundene CMS unter `static/admin` bleibt als Quellcode erhalten, wird aber nicht auf cyon veröffentlicht. Inhalte vorerst im Repository pflegen und neu bauen.
+- Website-Paket auf cyon hochgeladen und entpackt. Vorschau `vyyaxyllao.cyon.link` meldet noch «Domain nicht eingerichtet»; noch keine Live-Freigabe.
+- Öffentliche Nameserver weiterhin Cloudflare (`amy.ns.cloudflare.com`, `amir.ns.cloudflare.com`). DNS noch nicht geändert. Die cyon-Zone enthält Standard-Mailwerte und darf nicht ungeprüft aktiviert werden! Vollständige bisherige Zone einschliesslich Migadu MX/SPF/DKIM/DMARC, Nextcloud und weiteren Subdomains vor einer Nameserver-Umstellung sichern und übernehmen.
+- HTTPS auf cyon für meerwert.ch/www.meerwert.ch vor produktiver Umschaltung verifizieren. Keine Schutzmechanismen oder DNSSEC blind abschalten.
+- Rückfall: unveränderte Cloudflare-Installation und bisherige DNS-Werte bis zur Abnahme erhalten.
+
+## Paket erstellen
+
+```sh
+hugo --minify
+python scripts/package_cyon.py /absoluter/pfad/meerwert-cyon.zip
+```
+
+Nur das generierte Paket entpacken; niemals das Quellrepository oder Zugangsdaten in den Webroot hochladen. Das Installationsarchiv anschliessend ausserhalb des Webroots aufbewahren.
+
+## Bisherige Dokumentation (Cloudflare, vor Umzug)
+
 # meerwert.ch — Website
 
 Statische Website von **meerwert – kuonen** (biografische Beratung, Bernhard Kuonen).
@@ -64,14 +91,20 @@ nicht angefasst.)
 - Backend-Repo in `static/admin/config.yml`: `bekuonen/meerwert-kuonen`.
 - Auth-Worker: `https://cms-auth.bekuonen.workers.dev`.
 
-## Offen: OG-Image
+## Technische Korrekturen – 12. November 2026
 
-Die Open-Graph-/Social-Vorschau-Tags (`og:image`) verweisen auf
-**`/img/og-image.jpg`** (absolut: `https://meerwert.ch/img/og-image.jpg`).
-Dieses Bild **fehlt noch** und muss als Datei hinterlegt werden:
+Vorbereitet und lokal gebaut; Veröffentlichung auf cyon noch ausstehend.
 
-- Pfad: `static/img/og-image.jpg`
-- Format: **JPG, 1200×630 px** (Open-Graph-Standard)
+- Social-Vorschaubild 1200×630 aus der vorhandenen Wortmarke, Hintergrund in der bestehenden Website-Farbe.
+- www wird dauerhaft auf die Hauptdomain weitergeleitet; alte Danke-Adresse auf Kontakt.
+- Ungenutzte Taxonomien und Bestätigungsseite aus Build und Sitemap entfernt.
+- Überschriftenhierarchie und Menü-Zuordnung korrigiert.
+- Eingebettete Stilattribute in die CSS-Datei verschoben; CSS mit Inhalts-Hash gegen veraltete Browser-Caches.
+- Aktueller Hauptzweig (ohne Monatsversprechen) mit der bereits ausgelieferten cyon-Migration zusammengeführt.
+
+## Social-Vorschaubild
+
+`static/img/og-image.jpg`, JPG 1200×630 px, aus der bestehenden SVG-Wortmarke.
 
 ## Offen: Portrait (Über-mich)
 
