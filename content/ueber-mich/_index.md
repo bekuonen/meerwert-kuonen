@@ -27,6 +27,10 @@ Daraus leite ich keine Antworten für andere ab. Jede Lebenssituation ist anders
 
 Ich bin verheiratet und Grossvater. Auch das gehört zu meinem Blick auf das Leben.
 
+## Patientenbeteiligung
+
+Meine Erfahrung als Patient bringe ich auch in die Gesundheitsforschung ein. Wie ich mich dort beteilige, beschreibe ich auf der Seite [Patientenbeteiligung](/patientenbeteiligung/).
+
 ## Wie ich berate
 
 Ich höre zu, frage nach und sage, wie ich eine Situation einschätze. Wo es hilfreich ist, bringe ich Fachwissen und eigene Führungserfahrung ein. Meine Einschätzung darf hinterfragt werden.

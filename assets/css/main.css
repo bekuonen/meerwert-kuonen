@@ -704,7 +704,7 @@ section {
 /* ===========================
    RESPONSIVE — Desktop +
    =========================== */
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
   .nav-toggle {
     display: none;
   }
@@ -842,3 +842,17 @@ section {
 /* Abstaende ohne eingebettete Stilattribute (CSP-kompatibel). */
 .angebot-mehr { margin-top: 2rem; }
 .ueber-mich-kontakt { margin-top: var(--space-lg); }
+
+/* Eigenständiger Hinweis auf das Engagement in der Forschung. */
+.section-ppi { padding-top: 0; }
+.ppi-kasten {
+  background: var(--color-white);
+  border: 1px solid var(--color-line);
+  border-left: 5px solid var(--color-accent);
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+.ppi-kasten h2 { margin-bottom: var(--space-sm); }
+.ppi-kasten > p:not(.label) { max-width: 65ch; }
+.ppi-link { font-family: var(--font-heading); font-weight: 500; }
+.page-content h2 { margin-bottom: var(--space-md); }
+.nav-links { gap: 1.25rem; }
