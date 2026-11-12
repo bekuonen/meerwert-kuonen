@@ -12,7 +12,7 @@
 <!-- HALTUNG -->
 <section class="section-haltung">
   <div class="container">
-    <span class="label">{{ .Params.haltung_label }}</span>
+    <h2 class="label">{{ .Params.haltung_label }}</h2>
     <p>{{ .Params.haltung_text }}</p>
     <a href="{{ .Params.haltung_link_url }}">{{ .Params.haltung_link_text }} →</a>
   </div>
@@ -23,7 +23,7 @@
 {{ if $angebot }}
 <section class="section-angebot">
   <div class="container container--wide">
-    <span class="label">{{ .Params.angebot_label }}</span>
+    <h2 class="label">{{ .Params.angebot_label }}</h2>
     <div class="angebot-grid">
       {{ range $angebot.Params.felder }}
       <div class="angebot-karte">
@@ -33,7 +33,7 @@
       </div>
       {{ end }}
     </div>
-    <p style="margin-top: 2rem;">
+    <p class="angebot-mehr">
       <a href="/angebot/">Alle Felder ansehen →</a>
     </p>
   </div>

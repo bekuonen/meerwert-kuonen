@@ -838,3 +838,7 @@ section {
   letter-spacing: 0.1em;
   color: var(--color-accent);
 }
+
+/* Abstaende ohne eingebettete Stilattribute (CSP-kompatibel). */
+.angebot-mehr { margin-top: 2rem; }
+.ueber-mich-kontakt { margin-top: var(--space-lg); }

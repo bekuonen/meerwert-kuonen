@@ -5,7 +5,7 @@
       <img class="nav-logo-svg" src="/img/logo.svg" alt="meerwert" width="176" height="40">
     </a>
 
-    <ul class="nav-links" role="list">
+    <ul class="nav-links" id="nav-links" role="list">
       <li><a href="/" {{ if .IsHome }}class="active" aria-current="page"{{ end }}>Start</a></li>
       <li><a href="/angebot/" {{ if eq .Section "angebot" }}class="active" aria-current="page"{{ end }}>Angebot</a></li>
       <li><a href="/ueber-mich/" {{ if eq .RelPermalink "/ueber-mich/" }}class="active" aria-current="page"{{ end }}>Über mich</a></li>
