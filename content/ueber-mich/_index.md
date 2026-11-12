@@ -1,41 +1,40 @@
 ---
 title: "Über mich"
-description: "Bernhard Kuonen — Berater, Begleiter, Organisationspsychologe."
+description: "Bernhard Kuonen, Organisationspsychologe und Berater. Führungserfahrung in sozialen Organisationen und öffentlicher Verwaltung."
 ---
 
-**Lieber Meer als Mehrwert.**
-Das ist kein Slogan. Es ist eine Haltung.
+Ich bin Bernhard Kuonen, Organisationspsychologe und Berater. Aufgewachsen im Wallis, lebe ich heute in Luzern. Beide Orte gehören zu mir.
 
-Organisationspsychologe. Berater. Unabhängig.
-Aufgewachsen im Wallis. Heute in Luzern.
-Verheiratet. Grossvater von Chani und Sanna — zwei Gründen, warum die Zukunft wichtiger ist als die Vergangenheit.
+## Berufliche Erfahrung
 
-## Was mich geprägt hat
+Ich habe über viele Jahre Führungsverantwortung in sozialen und gemeinnützigen Organisationen sowie in der öffentlichen Verwaltung getragen. Dazu gehören Reorganisationsprojekte in sozialen Organisationen, die Neukonzeption eines grossen Gefängnisses, das ich auch als Direktor geführt habe, und der Aufbau sozialräumlicher Kinder- und Jugendarbeit in der Stadt Bern.
 
-Jahrelang in Führungsverantwortung — in sozialen, gemeinnützigen Organisationen und öffentlicher Verwaltung. Transformationen initiiert und umgesetzt. Ich weiss, wie Entscheidungen unter Druck entstehen — und wann es klüger ist, innezuhalten.
+Diese Aufgaben haben meinen Blick auf Veränderung geprägt. Ein Konzept muss sich im Alltag bewähren: bei den Menschen, die damit arbeiten, und bei jenen, deren Leben es betrifft. Als Führungsperson war ich dafür verantwortlich, Entscheidungen zu treffen und ihre Umsetzung mitzutragen.
 
-2017 kam eine Krebsdiagnose. Die Stammzelltransplantation hat mir das Leben zurückgegeben und den Blick auf das Wesentliche geschärft.
+Diese Erfahrung bringe ich in meine Beratung ein. Ich kenne die Spannungen zwischen fachlichen Ansprüchen und verfügbaren Mitteln – ebenso wie die Verantwortung gegenüber Mitarbeitenden und den Menschen, für die eine Organisation da ist.
 
-Sinn, Haltung und Verantwortung sind keine Konzepte. Sie sind gelebte Erfahrung.
+## Erfahrung, die verbindet
 
-## Was mich heute antreibt
+Berufliche Fragen reichen oft über den Arbeitsplatz hinaus. Wer eine neue Aufgabe übernimmt, muss vielleicht auch sein Verhältnis zur Verantwortung klären. Wer eine Führungsposition verlässt, verliert mitunter mehr als eine Funktion. Und eine persönliche Veränderung kann infrage stellen, was beruflich lange selbstverständlich war.
 
-Was mich antreibt, ist eine einfache Beobachtung:
-Viele Menschen wissen mehr, als sie sich zutrauen — und entscheiden unter ihren Möglichkeiten.
-Nicht weil Mut oder Stärke fehlen. Sondern weil beides Raum braucht.
-Diesen Raum zu öffnen, ist der Kern meiner Arbeit.
+Mich interessiert, wie diese Zusammenhänge das einzelne Leben prägen. Mein organisationspsychologischer Hintergrund hilft mir dabei, auch die Bedingungen zu betrachten, unter denen Menschen arbeiten und entscheiden. Nicht jede Schwierigkeit lässt sich durch eine Veränderung der eigenen Einstellung lösen.
 
-## Grundsätze
+## Was mich persönlich geprägt hat
 
-Woran Sie mich messen können:
+Eine Krebserkrankung und eine Stammzelltransplantation gehören zu meiner Lebensgeschichte. Sie haben mich auch mit der Erfahrung vertraut gemacht, dass sich vieles der eigenen Planung entzieht.
 
-1. Würde vor Effizienz.
-2. Befähigung statt Fürsorge. Nicht: Was kann ich für Sie tun? Sondern: Was brauchen Sie, um es selbst zu können?
-3. Verstehen vor Entscheiden.
-4. Ich gebe keine Ratschläge — ich stelle Fragen, die tragen.
-5. Was Sie entscheiden, gehört Ihnen. Auch die Entscheidung, nichts zu ändern.
-6. KI ist mein Werkzeug, nicht mein Ersatz. Ich nutze sie in der Arbeit — geführt, nicht umgekehrt.
+Daraus leite ich keine Antworten für andere ab. Jede Lebenssituation ist anders. Ich bringe diese Erfahrung mit, wenn wir über Veränderungen sprechen, die niemand gewählt hat.
 
-## Und weiter
+Ich bin verheiratet und Grossvater. Auch das gehört zu meinem Blick auf das Leben.
 
-Wie ich denke, zeigt sich am deutlichsten dort, wo ich schreibe: in den [Perspektiven](/perspektiven/).
+## Wie ich berate
+
+Ich höre zu, frage nach und sage, wie ich eine Situation einschätze. Wo es hilfreich ist, bringe ich Fachwissen und eigene Führungserfahrung ein. Meine Einschätzung darf hinterfragt werden.
+
+Wir prüfen gemeinsam, welche Möglichkeiten bestehen und welche Folgen damit verbunden sein könnten. Dabei hat auch Platz, was sich noch nicht entscheiden lässt.
+
+Die Verantwortung für Ihre Entscheidung bleibt bei Ihnen. Meine Aufgabe ist es, Ihnen eine fundierte Klärung zu ermöglichen.
+
+## Wie ich denke
+
+In den [Perspektiven](/perspektiven/) schreibe ich über Fragen, die mich beschäftigen. Dort lässt sich etwas von meiner Arbeitsweise kennenlernen – und davon, wo ich genauer hinsehen oder widersprechen möchte.
