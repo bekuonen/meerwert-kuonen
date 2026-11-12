@@ -26,25 +26,25 @@
   src: url('/fonts/space-grotesk-latin-500-normal.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Lora';
+  font-family: 'Source Sans 3';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/lora-latin-400-normal.woff2') format('woff2');
+  src: url('/fonts/source-sans-3-latin-400-normal.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Lora';
+  font-family: 'Source Sans 3';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/fonts/lora-latin-500-normal.woff2') format('woff2');
+  src: url('/fonts/source-sans-3-latin-500-normal.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Lora';
+  font-family: 'Source Sans 3';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/lora-latin-400-italic.woff2') format('woff2');
+  src: url('/fonts/source-sans-3-latin-400-italic.woff2') format('woff2');
 }
 
 /* --- CSS-Variablen --- */
@@ -59,13 +59,13 @@
 
   /* Typografie */
   --font-heading:   'Space Grotesk', system-ui, sans-serif;
-  --font-body:      'Lora', Georgia, serif;
+  --font-body:      'Source Sans 3', system-ui, sans-serif;
 
   /* Schriftgrössen — Mobile First */
   --size-h1:        clamp(2.25rem, 6vw, 3.75rem);
   --size-h2:        clamp(1.75rem, 4vw, 2.5rem);
   --size-h3:        clamp(1.25rem, 3vw, 1.5rem);
-  --size-body:      1.0625rem;
+  --size-body:      1.125rem;
   --size-small:     0.875rem;
   --size-label:     0.6875rem;
 
