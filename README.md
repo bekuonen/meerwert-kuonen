@@ -1,4 +1,10 @@
-# Umzug zu cyon – Stand 11. November 2026
+# Aktueller Produktionsstand – 12. November 2026
+
+meerwert.ch wird auf cyon aus `public_html/meerwert.ch` ausgeliefert. Die technischen Korrekturen sind veröffentlicht. Alle 23 ausgelieferten Dateien des geprüften Pakets stimmen bytegenau mit dem Build überein. www-Weiterleitung (auch Unterseiten), Danke-Weiterleitung und 404 für stillgelegte Taxonomien wurden live geprüft. Die Angebotsseite wurde im Browser visuell kontrolliert.
+
+Rückfallkopie auf cyon: `/home/damyvore/sicherung/meerwert-vor-20261112`. Installationspaket: `/home/damyvore/sicherung/meerwert-cyon-fixed.zip`. Beide liegen ausserhalb des Webroots. Der Upload erfolgt derzeit manuell; DNS- und Mail-Konfiguration wurden bei diesen Korrekturen nicht verändert.
+
+# Historisches Umzugsprotokoll – 11. November 2026
 
 Die Umstellung wird vor der noch ausstehenden Datenschutz-Auskunft von cyon vorbereitet. Eine ausschliessliche Bearbeitung in CH/EU ist nicht bestätigt.
 
@@ -93,7 +99,7 @@ nicht angefasst.)
 
 ## Technische Korrekturen – 12. November 2026
 
-Vorbereitet und lokal gebaut; Veröffentlichung auf cyon noch ausstehend.
+Am 12. November 2026 auf cyon veröffentlicht und live geprüft.
 
 - Social-Vorschaubild 1200×630 aus der vorhandenen Wortmarke, Hintergrund in der bestehenden Website-Farbe.
 - www wird dauerhaft auf die Hauptdomain weitergeleitet; alte Danke-Adresse auf Kontakt.
